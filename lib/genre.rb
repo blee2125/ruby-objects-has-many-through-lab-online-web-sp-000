@@ -20,7 +20,7 @@ class Genre
   end
 
   def artists
-    self.songs.collect {|song| song.artist}
+    songs.map(&:artist)
   end
 
 end
